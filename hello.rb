@@ -1,8 +1,8 @@
 require 'sinatra'
 
 get '/' do
-@name = %w(fuck you dude).sample
-erb :index
+  @name = %w(fuck you dude).sample
+  erb :index
 end
 
 get '/secret' do
@@ -10,8 +10,8 @@ get '/secret' do
 end
 
 get '/hello' do
-@visitor = params[:name]
-erb :index
+  @visitor = params[:name]
+  erb :index
 end
 
 get '/berry' do
